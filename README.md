@@ -14,9 +14,11 @@
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/b05da6d8-2892-42de-9f79-073ea77a6349)
 
-#Driver 
+#Driver Rating
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/3d0b5ca9-561d-4d9f-9ed5-8b5565ac5193)
+
+#Driver Friends ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/3f5dee83-69a5-43f1-9017-11159d41fe12)
 
 #Passenger ( Login vs Register )
 
