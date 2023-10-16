@@ -23,39 +23,41 @@ Advantages of this project:
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/3d0b5ca9-561d-4d9f-9ed5-8b5565ac5193)
 
-#Driver Friends ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/3f5dee83-69a5-43f1-9017-11159d41fe12)
+#Driver Friends - Will be added to Friends when the add to favorites button is clicked
 
-#Passenger ( Login vs Register )
+![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/3f5dee83-69a5-43f1-9017-11159d41fe12)
+
+#Passenger ( Login + Register ) - You can enter the system from any number you want, and if you order a taxi in the program, it will ask for additional information
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/7a9e87ff-ad03-4c72-bd40-e9bc5efc0fbe)
 
-#Passenger ( Driver rating )
+#Passenger ( Driver rating ) - Passengers can see the best drivers
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/53c0d72d-afa4-4936-9168-f307d06213d6)
 
-#Passenger ( Send message )
+#Passenger (Message ) - We currently only have routes to Vadi Tashkent
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/a34dcca5-986e-466c-b76c-192fa414aeef)
 
-#Passenger ( Send message )
+#Passenger ( Send message ) - Now we need to fill in additional information so that this message is visible to the drivers
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/ed31bf2e-d2b9-4647-8a2b-f40a2274ea89)
 
-#Driver ( Passenger Message ) 
+#Driver ( Passenger Message ) - In the driver's window, the Passenger's information is displayed on the Messages page, and when we press the Take button, the driver's information will be sent to the Passenger
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/2544616f-fba6-4793-9782-e8491ff78028)
 
-#Passenger ( Driver Message )
+#Passenger ( Driver Message ) - We have three taxis, we can go with any driver, just click the Let's go button
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/3851c877-e245-4bad-8504-7bc2d6b8db72)
 
-#Driver Booking
+#Driver Booking - Since we easily book a taxi, our information will appear in the driver booking section
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/04e326f6-e1d0-4aad-a269-1c481a5544fa)
 
-#Passenger Booking 
+#Passenger Booking - Driver's information remains in our booking section
 
-![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/e6c5a0f6-fbc4-4a9f-8192-3443493ced46)
+![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/e6c5a0f6-fbc4-4a9f-8192-3443493ced46) - 
 
 
 
