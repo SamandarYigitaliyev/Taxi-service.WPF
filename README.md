@@ -1,4 +1,4 @@
-# Taxi-service.WPF
+![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/ced7d4c1-f3ae-424f-b9e0-51cb3f63e9d1)# Taxi-service.WPF
 
 #Kirish
 
@@ -23,6 +23,11 @@
 #Passenger ( Login vs Register )
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/7a9e87ff-ad03-4c72-bd40-e9bc5efc0fbe)
+
+#Passenger ( Driver rating )
+
+![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/53c0d72d-afa4-4936-9168-f307d06213d6)
+
 
 
 
