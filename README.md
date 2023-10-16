@@ -5,7 +5,7 @@ Advantages of this project:
 1: Drivers can easily find passengers
 2: Passengers can also find drivers quickly
 
-#Kirish - When you enter the program, it asks us who we are
+#Started - When you enter the program, it asks us who we are
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/6e91db40-ce3a-489b-9089-51c861f3a0b3)
 
