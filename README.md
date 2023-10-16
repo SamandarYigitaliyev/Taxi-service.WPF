@@ -10,7 +10,8 @@
 
 #Driver Register
 
-![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/33899ff6-811f-41c5-9530-3fc258a56f12)
+![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/dfe83bfb-f480-4b13-8486-429cae760de2)
+
 
 
 
