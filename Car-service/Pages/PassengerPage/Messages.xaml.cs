@@ -44,9 +44,9 @@ namespace Car_service.Pages.PassengerPage
             wrpDriverMessages.Children.Clear();
 
 
-            if (Passengerlogin.phoneNumber.Text.Length > 0)
+            if (Passengerlogin.phone.Length > 0)
             {
-             var costumer = await order.Search(Passengerlogin.phoneNumber.Text.ToString());
+             var costumer = await order.Search(Passengerlogin.phone.ToString());
                 foreach (var cost in costumer)
                 {
                     DriverMessagesUserControl userControl = new DriverMessagesUserControl();
@@ -57,7 +57,7 @@ namespace Car_service.Pages.PassengerPage
             }
             else if (PassengerInfo.phonenumber.Text.Length>0)
             {
-                var costumer = await order.Search(Passengerlogin.phoneNumber.Text.ToString());
+                var costumer = await order.Search(Passengerlogin.phone.ToString());
                 foreach (var cost in costumer)
                 {
                     DriverMessagesUserControl userControl = new DriverMessagesUserControl();

@@ -15,7 +15,7 @@
         Title="PassengerInfo" Height="350" Width="300"
         Opacity="0.8">
    
-        <Border CornerRadius="25"  Background="{DynamicResource ButtonColorSignIn}">
+        <Border CornerRadius="25"  Background="{DynamicResource ButtonColorSignIn}" MouseDown="Border_MouseDown">
        
             <StackPanel x:Name="infromationpanel" 
                         Grid.Column="0" Margin="20" 

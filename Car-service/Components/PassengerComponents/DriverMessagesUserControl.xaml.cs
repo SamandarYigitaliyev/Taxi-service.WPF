@@ -47,10 +47,10 @@ namespace Car_service.Components.PassengerComponents
         private async void gubutton(object sender, RoutedEventArgs e)
         {
             bool a = false;
-            if(Passengerlogin.phoneNumber.Text.Length>0)
+            if(Passengerlogin.phone.Length>0)
             {
 
-            var res = await did.GetIsAgree(Passengerlogin.phoneNumber.Text);
+            var res = await did.GetIsAgree(Passengerlogin.phone);
             a =res;
             }
             else
@@ -62,10 +62,10 @@ namespace Car_service.Components.PassengerComponents
             {
                 Passager passager = new Passager();
                 passager.IsAktiv = false;
-                if (Passengerlogin.phoneNumber.Text.Length > 0)
+                if (Passengerlogin.phone.Length > 0)
                 {
-                    var result1 = await passenger.UpdateAktiv(Passengerlogin.phoneNumber.Text, passager);
-                    var result3 = await passenger.GetPersonNum(Passengerlogin.phoneNumber.Text);
+                    var result1 = await passenger.UpdateAktiv(Passengerlogin.phone, passager);
+                    var result3 = await passenger.GetPersonNum(Passengerlogin.phone);
                     DriverEntitiy driver = new DriverEntitiy();
                     var result2 = await _driver.UpdateBooked(txtPhoneNumber.Text, driver, result3);
 
@@ -81,9 +81,9 @@ namespace Car_service.Components.PassengerComponents
                 BookingDidPpnEntity entity = new BookingDidPpnEntity();
                 entity.IsAgree = true;
 
-                if (Passengerlogin.phoneNumber.Text.Length > 0)
+                if (Passengerlogin.phone.Length > 0)
                 {
-                    var result = await did.UpdateIsAgree(Passengerlogin.phoneNumber.Text, entity);
+                    var result = await did.UpdateIsAgree(Passengerlogin.phone, entity);
                     if (result > 0) MessageBox.Show("Congratulations, you have reserved your place", "successful", MessageBoxButton.OK);
                 }
                 else if (PassengerInfo.phonenumber.Text.Length > 0)
@@ -99,12 +99,12 @@ namespace Car_service.Components.PassengerComponents
         }
         public void SetData(Orderviews orderviews)
         {
+            txtScore.Text = orderviews.Score.ToString();
             txtDId.Text = orderviews.DriverId.ToString();
             txtName.Text = orderviews.Name.ToString();
             txtPhoneNumber.Text = orderviews.PhoneNumber.ToString();
             if (orderviews.IsToshket == false) txtPlace.Text = orderviews.place1.ToString();
             else txtPlace.Text = "Toshkent";
-            txtScore.Text = orderviews.Score.ToString();
             DriverPicture.ImageSource = new BitmapImage(new Uri(orderviews.ImagePath, UriKind.Relative));
 
         }

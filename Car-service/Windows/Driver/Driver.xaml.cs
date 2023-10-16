@@ -131,5 +131,10 @@ namespace Car_service.Windows.Driver
         {
             MessageBox.Show("Here you can see the news in the program. There are no news yet", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+        private void NamigatorPage_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+
+        }
     }
 }

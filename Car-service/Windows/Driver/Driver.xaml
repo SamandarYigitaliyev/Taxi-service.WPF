@@ -41,7 +41,7 @@
                     </Path>
 
                 </Button>
-                <Border Grid.Row="1" Background="{DynamicResource PrimaryHueDarkBrush}" CornerRadius="0,50,0,0">
+                <Border Grid.Row="1" Background="{DynamicResource PrimaryHueDarkBrush}" CornerRadius="0,50,0,30">
                     <DockPanel>
 
                         <!--Menu Logo-->
@@ -149,7 +149,7 @@
             </Grid>
             <Grid Grid.Column="1">
                 <Frame x:Name="NamigatorPage"
-                       NavigationUIVisibility="Hidden" Margin="-10,10,10,-10">
+                       NavigationUIVisibility="Hidden" Margin="-10,10,10,-10" Navigated="NamigatorPage_Navigated">
                     
                 </Frame>
                 

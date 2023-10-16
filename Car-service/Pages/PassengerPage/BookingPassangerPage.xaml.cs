@@ -42,9 +42,9 @@ namespace Car_service.Pages.PassengerPage
                 PageNumber = 1,
                 PageSize = 30
             };
-            if (Passengerlogin.phoneNumber.Text.Length > 0)
+            if (Passengerlogin.phone.Length > 0)
             {
-                string PhoneNumber = Passengerlogin.phoneNumber.Text;
+                string PhoneNumber = Passengerlogin.phone;
                 var costumer = await order.SearchDriverInfo(PhoneNumber);
                 foreach (var cost in costumer)
                 {

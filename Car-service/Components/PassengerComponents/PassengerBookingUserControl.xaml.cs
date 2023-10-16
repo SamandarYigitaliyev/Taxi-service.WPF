@@ -45,13 +45,13 @@ namespace Car_service.Components.PassengerComponents
         private async void Deleted(object sender, RoutedEventArgs e)
         {
 
-            if(Passengerlogin.phoneNumber.Text.Length> 0)
+            if(Passengerlogin.phone.Length> 0)
             {
 
-                string Number = Passengerlogin.phoneNumber.Text;
+                string Number = Passengerlogin.phone;
                 var result = await did.DeletPhoneNumberDriverId(Number, DriverId);
                 if (result > 0) MessageBox.Show("Order cancellation", "Order", MessageBoxButton.OK, MessageBoxImage.Asterisk);
-                var result3 = await passenger.GetPersonNum(Passengerlogin.phoneNumber.Text);
+                var result3 = await passenger.GetPersonNum(Passengerlogin.phone);
                 DriverEntitiy driver = new DriverEntitiy();
                 var result2 = await driver1.UpdateBookedMinus(txtPhoneNumber.Text, driver, result3);
             }

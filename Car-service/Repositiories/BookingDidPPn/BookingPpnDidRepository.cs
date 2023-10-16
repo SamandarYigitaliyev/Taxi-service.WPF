@@ -77,7 +77,7 @@ namespace Car_service.Repositiories.BookingDidPPn
             try
             {
                 await _connection.OpenAsync();
-                string query = $"DELETE FROM public.\"Booking\" WHERE driver_id = {DriverId} and p_phone_number = '{PassengerPhoneNumber}'";
+                string query = $"DELETE FROM public.\"Booking\" WHERE driver_id = {DriverId} and p_phone_number = '+998{PassengerPhoneNumber}'";
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {
                     var dbrresult = await command.ExecuteNonQueryAsync();
@@ -105,7 +105,7 @@ namespace Car_service.Repositiories.BookingDidPPn
             {
                 await _connection.OpenAsync();
                 List<BookingDidPpnEntity> list = new List<BookingDidPpnEntity>();
-                string query = $"select * from \"Booking\" where  p_phone_number = '{PassengerPhoneNumber}' and driver_id = {DriverId} ;";
+                string query = $"select * from \"Booking\" where  p_phone_number = '+998{PassengerPhoneNumber}' and driver_id = {DriverId} ;";
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {
                     await using (var reader = await command.ExecuteReaderAsync())
@@ -135,7 +135,7 @@ namespace Car_service.Repositiories.BookingDidPPn
             {
                 await _connection.OpenAsync();
                 List<int> list = new List<int>();
-                string query = $"select driver_id from \"Booking\" order by id ;";
+                string query = $"select driver_id from \"Booking\" where = '+998{phoneNumber}' order by id ;";
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {
                     await using (var reader = await command.ExecuteReaderAsync())
@@ -163,7 +163,7 @@ namespace Car_service.Repositiories.BookingDidPPn
             {
                 await _connection.OpenAsync();
                 bool Isagree = false;
-                string query = $"\tselect is_agree from \"Booking\" where p_phone_number = '{phoneNumber}' ";
+                string query = $"\tselect is_agree from \"Booking\" where p_phone_number = '+998{phoneNumber}' ";
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {
                     await using (var reader = await command.ExecuteReaderAsync())
@@ -210,7 +210,7 @@ namespace Car_service.Repositiories.BookingDidPPn
             try
             {
                 await _connection.OpenAsync();
-                string query = $"UPDATE public.\"Booking\" set is_agree= @is_agree WHERE p_phone_number = '{phoneNumber}' ";
+                string query = $"UPDATE public.\"Booking\" set is_agree= @is_agree WHERE p_phone_number = '+998{phoneNumber}' ";
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {
                     command.Parameters.AddWithValue("is_agree", editObj.IsAgree);

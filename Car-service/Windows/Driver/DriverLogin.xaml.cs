@@ -91,8 +91,8 @@ namespace Car_service.Windows.Driver
                                     textId.Text = reader.GetInt32(0).ToString();
 
                                     Driver driver = new Driver();
-                                    driver.ShowDialog();
                                     this.Hide();
+                                    driver.ShowDialog();
                                 }
                             }
                                

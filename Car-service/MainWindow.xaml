@@ -64,7 +64,7 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0"
-                    CornerRadius="0,0,0,12"
+                    CornerRadius="0,0,12,12"
                     Background="{DynamicResource PrimaryBackground}" Grid.ColumnSpan="2">
 
 

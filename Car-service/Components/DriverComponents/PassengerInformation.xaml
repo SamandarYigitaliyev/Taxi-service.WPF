@@ -12,7 +12,7 @@
              >
     <Border CornerRadius="25"  
             Background="{DynamicResource ButtonColorSignIn}" 
-           Margin="15"
+            Margin="19 19 0 0"
             Width="300"
             Height="365"
             >

@@ -79,5 +79,10 @@ namespace Car_service.Windows.Passenger
             PersonNum.Text = txtThereArePassengres.Text;
             this.Close();
         }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
     }
 }

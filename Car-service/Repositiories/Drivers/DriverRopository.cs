@@ -212,7 +212,7 @@ namespace Car_service.Repositiories.Drivers
             try
             {
                 await _connection.OpenAsync();
-                string query = $"UPDATE public.\"Driver\"  SET booked= booked+{number}  WHERE phone_number = '{PhoneNumber}';";
+                string query = $"UPDATE public.\"Driver\"  SET booked= booked+{number}  WHERE phone_number = '+998{PhoneNumber}';";
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {
                     command.Parameters.AddWithValue("booked", editObj.Booked);
@@ -235,7 +235,7 @@ namespace Car_service.Repositiories.Drivers
             try
             {
                 await _connection.OpenAsync();
-                string query = $"UPDATE public.\"Driver\"  SET booked= booked-{number}  WHERE phone_number = '{PhoneNumber}';";
+                string query = $"UPDATE public.\"Driver\"  SET booked= booked-{number}  WHERE phone_number = '+998{PhoneNumber}';";
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {
                     command.Parameters.AddWithValue("booked", editObj.Booked);

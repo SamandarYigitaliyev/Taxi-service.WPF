@@ -35,7 +35,7 @@ namespace Car_service.Repositiories.orderR
             {
                 await _connection.OpenAsync();
                 List<Orderviews> list = new List<Orderviews>();
-                string query = $"select * from \"order\"  where p_phone_number = '{phoneNumber}' ;";
+                string query = $"select * from \"order\"  where p_phone_number = '+998{phoneNumber}' ;";
 
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {
@@ -83,7 +83,7 @@ namespace Car_service.Repositiories.orderR
             {
                 await _connection.OpenAsync();
                 List<Orderviews> list = new List<Orderviews>();
-                string query = $"select * from \"order\"  where p_phone_number = '{phoneNumber}' and is_agree = true ;";
+                string query = $"select * from \"order\"  where p_phone_number = '+998{phoneNumber}' and is_agree = true ;";
 
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {

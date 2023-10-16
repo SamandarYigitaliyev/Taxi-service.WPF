@@ -14,7 +14,7 @@ namespace Car_service.Windows.Passenger
     {
      
         public static TextBox TextId= new TextBox();
-        public static TextBox phoneNumber = new TextBox();
+        public static string phone ;
         public Passengerlogin()
         {
             InitializeComponent();
@@ -44,9 +44,9 @@ namespace Car_service.Windows.Passenger
 
         private async void btnPassengerLogIn_Click(object sender, RoutedEventArgs e)
         {
-            string number = txtPhoneNumber.Text;
+            phone = txtPhoneNumber.Text;
 
-            bool IsNumber = int.TryParse(number, out int a);
+            bool IsNumber = int.TryParse(phone, out int a);
             if(IsNumber) {
                 await using (var connection = new NpgsqlConnection(DBConstants.DB_CONNECTION_STRING))
                 {
@@ -62,7 +62,7 @@ namespace Car_service.Windows.Passenger
                             {
                                 if (reader.GetString(2) == txtPhoneNumber.Text)
                                 {
-                                    phoneNumber.Text = txtPhoneNumber.Text;
+                                    phone = txtPhoneNumber.Text;
 
                                     Passengerlogin.TextId.Text = reader.GetInt32(0).ToString();
                                     PassengerDashboard passenger1 = new PassengerDashboard();

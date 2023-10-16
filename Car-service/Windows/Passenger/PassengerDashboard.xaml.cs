@@ -95,5 +95,10 @@ namespace Car_service.Windows.Passenger
                 }
             }
         }
+
+        private void NamigatorPage_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+
+        }
     }
 }

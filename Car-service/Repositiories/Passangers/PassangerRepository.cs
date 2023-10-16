@@ -220,7 +220,7 @@ namespace Car_service.Repositiories.Drivers
             try
             {
                 await _connection.OpenAsync();
-                string query = $"UPDATE public.\"Passenger\" SET is_aktiv= false WHERE  phone_number = '{PhoneNumber}'";
+                string query = $"UPDATE public.\"Passenger\" SET is_aktiv= false WHERE  phone_number = '+998{PhoneNumber}'";
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {
                     command.Parameters.AddWithValue("is_aktiv", editObj.IsAktiv);
@@ -244,7 +244,7 @@ namespace Car_service.Repositiories.Drivers
             {
                 await _connection.OpenAsync();
                 int PersonNum = 0;
-                string query = $"select there_are_passengers from \"Passenger\" where phone_number = '{PhoneNumber}' ";
+                string query = $"select there_are_passengers from \"Passenger\" where phone_number = '+998{PhoneNumber}' ";
                 await using (var command = new NpgsqlCommand(query, _connection))
                 {
                     await using (var reader = await command.ExecuteReaderAsync())

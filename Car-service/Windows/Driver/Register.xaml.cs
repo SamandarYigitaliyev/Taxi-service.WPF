@@ -1,5 +1,4 @@
 ﻿using Car_service.Components;
-using Car_service.Components.DriverComponents;
 using Car_service.Constants;
 using Car_service.Entities.Cars;
 using Car_service.Entities.Drivers;
@@ -11,23 +10,15 @@ using Car_service.Repositiories.Cars;
 using Car_service.Repositiories.Drivercity;
 using Car_service.Repositiories.Drivers;
 using Car_service.Security;
-using Car_service.Unitils;
 using Microsoft.Win32;
-using Npgsql;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Path = System.IO.Path;
 
 namespace Car_service.Windows.Driver
@@ -42,22 +33,22 @@ namespace Car_service.Windows.Driver
         public static TextBox textt = new TextBox();
         public static CheckBox check = new CheckBox();
         private readonly ICity citty;
-        public static Register Instance { get;  set; }
+        public static Register Instance { get; set; }
         public Register()
         {
             InitializeComponent();
             this._driverRepositiry = new DriverRopository();
             this._carRepository = new CarRepository();
-            this.citty= new CityRepository();
-           
+            this.citty = new CityRepository();
+
         }
 
         private void Exit_click(object sender, RoutedEventArgs e)
         {
-            
+
             this.Close();
         }
-        
+
         public async Task<string> CopyImage(string imagePath, string img)
         {
 
@@ -97,13 +88,13 @@ namespace Car_service.Windows.Driver
             }
         }
 
-        private async  void SevaButton_Click(object sender, RoutedEventArgs e)
+        private async void SevaButton_Click(object sender, RoutedEventArgs e)
         {
             DriverEntitiy driver = new DriverEntitiy();
 
             int j = 0;
             // Driver 
-            
+
             string imagePath = Driverimage.ImageSource.ToString();
 
             if (!String.IsNullOrEmpty(imagePath))
@@ -130,7 +121,7 @@ namespace Car_service.Windows.Driver
 
             if (!String.IsNullOrEmpty(txtDriverPhoneNumber.Text))
             {
-                driver.Phone_number = txtDriverName.Text;
+                driver.Phone_number = txtDriverPhoneNumber.Text;
                 j++;
 
             }
@@ -178,10 +169,10 @@ namespace Car_service.Windows.Driver
             {
                 string password = txtDriverPassword.Text;
 
-            var hasherPassword = PasswordHasher.Hash(password);
+                var hasherPassword = PasswordHasher.Hash(password);
 
-            driver.PasswordHash = hasherPassword.PasswordHash;
-            driver.Salt = hasherPassword.Salt;
+                driver.PasswordHash = hasherPassword.PasswordHash;
+                driver.Salt = hasherPassword.Salt;
                 j++;
             }
             else
@@ -190,7 +181,7 @@ namespace Car_service.Windows.Driver
                 PasswordL.Foreground = new SolidColorBrush(Colors.Red);
             }
 
-            
+
             driver.CreatedAt = driver.UpdatedAt = TimeHelper.GetDateTime();
 
             var result = await _driverRepositiry.CretaAsync(driver);
@@ -260,29 +251,29 @@ namespace Car_service.Windows.Driver
                 this.txpsL.Text += "*";
                 this.txpsL.Foreground = new SolidColorBrush(Colors.Red);
             }
-          
-            
-            
+
+
+
             car.Description = txtCarDescription.Text;
             car.CreatedAt = car.UpdatedAt = TimeHelper.GetDateTime();
 
             var result1 = await _carRepository.CretaAsync(car);
-            check.IsChecked = true; 
-            
-            if(j==11) this.Close();
-        
+            check.IsChecked = true;
 
-           
+            if (j == 11) this.Close();
+
+
+
         }
 
-        
+
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             check.IsChecked = false;
 
             CityCtackPanel.Children.Clear();
-         
+
             var costumer = await citty.GetAll();
             foreach (var cost in costumer)
             {
@@ -291,16 +282,14 @@ namespace Car_service.Windows.Driver
 
                 CityCtackPanel.Children.Add(city);
             }
-           
-            
-          
+
+
+
         }
 
-        private void w_Click(object sender, RoutedEventArgs e)
-
+        private void mouse(object sender, MouseButtonEventArgs e)
         {
-            
-            
+            this.DragMove();
         }
     }
 }
