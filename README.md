@@ -1,12 +1,17 @@
-#Kirish
+The goal of this project is to establish a taxi service from Tashkent to other regions, from all regions to Tashkent.
+Advantages of this project:
+1: Drivers can easily find passengers
+2: Passengers can also find drivers quickly
+
+#Kirish - When you enter the program, it asks us who we are
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/6e91db40-ce3a-489b-9089-51c861f3a0b3)
 
-#Driver Login
+#Driver Login 
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/8125ef31-236a-4612-bbf7-65af9fe9e0ff)
 
-#Driver Register
+#Driver Register 
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/dfe83bfb-f480-4b13-8486-429cae760de2)
 
@@ -14,7 +19,7 @@
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/b05da6d8-2892-42de-9f79-073ea77a6349)
 
-#Driver Rating
+#Driver Rating - Sorted by driver score
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/3d0b5ca9-561d-4d9f-9ed5-8b5565ac5193)
 
