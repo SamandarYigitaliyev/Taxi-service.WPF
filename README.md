@@ -59,6 +59,10 @@ Advantages of this project:
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/e6c5a0f6-fbc4-4a9f-8192-3443493ced46) - 
 
+#Driver Settings - He can update his information
+
+![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/f2b28063-108d-4423-b997-1c6e1e7b5bfd)
+
 
 
 
