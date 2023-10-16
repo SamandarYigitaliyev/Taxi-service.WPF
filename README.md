@@ -1,5 +1,3 @@
-![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/ced7d4c1-f3ae-424f-b9e0-51cb3f63e9d1)# Taxi-service.WPF
-
 #Kirish
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/6e91db40-ce3a-489b-9089-51c861f3a0b3)
@@ -31,6 +29,19 @@
 #Passenger ( Send message )
 
 ![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/a34dcca5-986e-466c-b76c-192fa414aeef)
+
+#Passenger ( Send message )
+
+![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/ed31bf2e-d2b9-4647-8a2b-f40a2274ea89)
+
+#Driver ( Passenger Message ) 
+
+![image](https://github.com/SamandarYigitaliyev/Taxi-service.WPF/assets/121451433/27aa3a66-69da-4024-825d-555e8873494a)
+
+
+
+
+
 
 
 
